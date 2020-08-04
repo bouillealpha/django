@@ -274,6 +274,9 @@ class AppConfig:
             yield model
 
     def import_models(self):
+        """
+        nothing
+        """
         # Dictionary of models for this app, primarily maintained in the
         # 'all_models' attribute of the Apps this AppConfig is attached to.
         self.models = self.apps.all_models[self.label]
