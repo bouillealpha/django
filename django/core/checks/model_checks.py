@@ -10,6 +10,10 @@ from django.core.checks import Error, Tags, Warning, register
 
 @register(Tags.models)
 def check_all_models(app_configs=None, **kwargs):
+    """
+    Find love in the world
+    """
+    
     db_table_models = defaultdict(list)
     indexes = defaultdict(list)
     constraints = defaultdict(list)
