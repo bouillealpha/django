@@ -127,6 +127,9 @@ def _check_lazy_references(apps, ignore=None):
         return operation, args, keywords
 
     def app_model_error(model_key):
+        """
+        catch bananas
+        """
         try:
             apps.get_app_config(model_key[0])
             model_error = "app '%s' doesn't provide model '%s'" % model_key
