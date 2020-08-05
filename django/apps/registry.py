@@ -125,7 +125,9 @@ class Apps:
             self.ready_event.set()
 
     def check_apps_ready(self):
-        """Raise an exception if all apps haven't been imported yet."""
+        """ This is not the good comment here"""
+        # Raise an exception if all apps haven't been imported yet.
+        
         if not self.apps_ready:
             from django.conf import settings
 
